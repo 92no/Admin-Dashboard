@@ -16,7 +16,7 @@ p.text-medium {
 }
 
 p.text-small {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 
 img.icon-title {
@@ -44,11 +44,6 @@ div.sidebar {
   grid-row: 1 / 3;
   padding: 20px;
   background-color: skyblue;
-}
-
-div.main-section {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
 }
 
 div.sidebar-item {
@@ -146,4 +141,122 @@ div.button {
   border-radius: 30px;
 }
 
-/* Main Section */
+/* Main Section left */
+
+div.main-section {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+}
+
+div.main-section-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+p.main-section-left-title {
+  display: flex;
+  align-items: end;
+}
+
+div.card {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  grid-template-rows: 20% 60% 20%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+div.card-one {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+div.card-two {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+div.card-three {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+div.card-four {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+div.card-five {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+div.card-six {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+div.card-stripe {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  border-radius: 10px 0px 0px 10px;
+  background-color: lightsalmon;
+}
+
+p.card-title {
+  display: flex;
+  align-items: end;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+
+p.card-text {
+  padding: 0px 20px;
+}
+
+div.card-icons {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  padding: 0px 20px;
+}
+
+/* Main Section right */
+
+div.main-section-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 50px 1fr;
+  padding: 20px;
+}
+
+p.main-section-right-title-one {
+  display: flex;
+  align-items: end;
+}
+
+div.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+p.main-section-right-title-two {
+  display: flex;
+  align-items: end;
+}
+
+div.list-item {
+  display: flex;
+  align-items: center;
+}
